@@ -1,0 +1,73 @@
+body {
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+}
+
+h1,
+p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+}
+
+/* PSEUDO SELECTOR TO SELECT ALL FIELDSET EXCEPT THE LAST ONE  */
+fieldset:not(:last-of-type) {
+    border-bottom: 3px solid #3b3b4f;
+}
+
+/* margin: 0 auto; IS USED TO CENTER FORM   */
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    padding: 2em;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input,
+textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+a {
+    color: #dfdfe2;
+}
+
+/* The below selects input elements with a name attribute value of submit.  */
+/* ALSO USE margin: 0 auto; TO CENTER THE SUBMIT BUTTON */
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
